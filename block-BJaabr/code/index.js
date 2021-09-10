@@ -43,7 +43,7 @@ Do the following with above problem.
 // - Write a Function Declaration
 
 function addOne(numbers) {
-  return numbers + 1 ;
+  return String(numbers + 1) ;
 }
 addOne(25);// 25
 typeof_return_value = number
@@ -51,7 +51,7 @@ typeof_return_value = number
 // - Write a Function Expression
 
 let addOne = function (numbers) {
-   return numbers + 1;
+  return String(numbers + 1) ;
 }
 addOne(100);// 100
 typeof_return_value = number
@@ -67,14 +67,17 @@ typeof_return_value = number
 // - Write an Arrow Function with curly brackets
 
 let addOne = (numbers) => {
-  return numbers + 1;
+  return String(numbers + 1) ;
 }
 addOne(1000)//1000
 typeof_return_value = number
 
 // - Execute the function
+addOne();
 
 // - Execute the function and store the return value in a variable.
+
+let num = addOne();
 
 // - What is the typeof returnValue
 
@@ -87,32 +90,34 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 
-function substractone (number) {
-  return number - 1 ;
+ function substractOne (number) {
+   return String(numbers - 1) ;
 }
-substractone(100);// 99
 
 // - Write a Function Expression
 
 let substractOne = function (number) {
-  return number - 1 ; 
+  return String(numbers - 1) ;
 }
 substractOne(500);//499
 
 // - Write an Arrow Function without curly brackets(if possible)
 
-let substractOne = (numbers) => numbers - 1 ; 
+let substractOne = (numbers) => string(numbers - 1) ; 
 substractOne(200) // 199
 
 // - Write an Arrow Function with curly brackets
 
 let substractOne = (numbers) => {
-  return numbers - 1 ;
+  return String(numbers - 1) ;
 }
 
 // - Execute the function
 
+substractOne()
+
 // - Execute the function and store the return value in a variable.
+let subnum = substractOne()
 
 // - What is the typeof returnValue
 `Number`
@@ -127,30 +132,32 @@ Do the following with above problem.
 // - Write a Function Declaration
 
 function sum(num1 , num2) {
-  return num1 + num2;
+  return String(num1 + num2);
 }
 sum(20, 20)
 
 // - Write a Function Expression
 
 let sum = function(num1 , num2) {
-  return num1 + num2 ;
+  return String(num1 + num2);
 }
 
 // - Write an Arrow Function without curly brackets(if possible)
 
-let sum = (num1 , num2) => num1 + num2 ;
+let sum = (num1 , num2) => String(num1 + num2) ;
 
 
 // - Write an Arrow Function with curly brackets
 
 let sum = (num1 , num2) => {
-  return num1 + num2;
+  return String(num1 + num2);
 }
 
 // - Execute the function
+sum()
 
 // - Execute the function and store the return value in a variable
+let sumNum = sum()
 
 // - What is the typeof returnValue
 `Number`
@@ -165,30 +172,34 @@ Do the following with above problem.
 // - Write a Function Declaration
 
 function square(number) {
-  return number * number;
+  return String(number * number);
 } 
 square(15) // 225
 
 // - Write a Function Expression
 
 let square = function (number) {
-  return number * number;
+  return String(number * number);
 }
 
 
 // - Write an Arrow Function without curly brackets(if possible)
 
-let square = (number) => (number) * (number);
+let square = (number) => String((number) * (number));
 
 // - Write an Arrow Function with curly brackets
 
 let square = (number) => {
-  return (number) * (number);
+  return String(number * number);
 }
 
 // - Execute the function
 
+square()
+
 // - Execute the function and store the return value in a variable
+
+let squarenum = square()
 
 // - What is the typeof returnValue
 `Number`
@@ -247,8 +258,11 @@ let isGreter = (num1,num2) => {
 }
 
 // - Execute the function
+isGreter()
 
 // - Execute the function and store the return value in a variable
+
+let isGreaternum = isGreter()
 
 // - What is the typeof returnValue
 `true or false`
@@ -312,8 +326,8 @@ let oddOrEven = (number) => {
 
 
 // - Execute the function
+oddOrEven()
 
 // - Execute the function and store the return value in a variable
 
-// - What is the typeof returnValue
-"string"
+let oddOrEvennum = oddOrEven()
